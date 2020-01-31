@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text, StyleSheet, View, Image } from 'react-native';
-import { Card, Image } from 'react-native-elements';
+import { Card, ListItem, Button } from 'react-native-elements';
 
 const users = [
     {
