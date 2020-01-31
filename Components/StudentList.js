@@ -17,13 +17,14 @@ export default class StudentList extends Component {
     //     title: 'Welcome',
     // };
     render() {
-        // const { navigate } = this.props.navigation;
+        const { navigate } = this.props.navigation;
         return (
             
             <View>
                 {
                     users.map((l, i) => (
                         <ListItem
+                            onPress={() => navigate('Info', { name: l.name })}
                             key={i}
                             leftAvatar={{ source: { uri: l.avatar_url } }}
                             title={l.name}
@@ -36,7 +37,7 @@ export default class StudentList extends Component {
             </View>
             // <Button
             //     title="Go to Jane's profile"
-            //     onPress={() => navigate('Edit', { name: 'Jane' })}
+            //     
             // />
         )
     }

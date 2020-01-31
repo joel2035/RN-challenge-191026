@@ -1,6 +1,6 @@
 import StudentList from './StudentList';
 import Post from './Post';
-import Edit from './Edit';
+import Info from './Info';
 
 import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
@@ -10,8 +10,8 @@ const Students = createStackNavigator({
     StudentList: {
     screen: StudentList
     },
-    Edit: {
-        screen: Edit
+    Info: {
+        screen: Info
     }, 
 });
 
