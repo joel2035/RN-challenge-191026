@@ -10,16 +10,10 @@ const users = [
         icon:'heartbeat'
     },
 ]
-
 export default class StudentList extends Component {
-    
-    // static navigationOptions = {
-    //     title: 'Welcome',
-    // };
     render() {
         const { navigate } = this.props.navigation;
         return (
-            
             <View>
                 {
                     users.map((l, i) => (
@@ -34,11 +28,7 @@ export default class StudentList extends Component {
                         />
                     ))
                 }
-            </View>
-            // <Button
-            //     title="Go to Jane's profile"
-            //     
-            // />
+            </View>  
         )
     }
 }
