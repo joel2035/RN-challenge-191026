@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Text, TextInput, StyleSheet, View, ScrollView } from 'react-native';
+import { Text, TextInput, StyleSheet, View, ScrollView, Picker} from 'react-native';
 import { Input } from 'react-native-elements';
 import Textarea from 'react-native-textarea';
-
 export default class Post extends Component {
-   
     render() {
         return (
             <View style = {styles.container}>
@@ -31,6 +29,7 @@ export default class Post extends Component {
                         underlineColorAndroid={'transparent'}
                     />
                 </ScrollView>
+
             </View>            
         )
     }
@@ -56,8 +55,8 @@ const styles = StyleSheet.create({
     marginTop:20
  },
     textareaContainer: {
-        height: 180,
-        width:350,
+        height: 110,
+        width:330,
         marginTop:20,
         padding: 5,
         backgroundColor: '#F5FCFF',
