@@ -8,73 +8,68 @@ const users = [
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon:'heartbeat'
     },
     {
         name: 'Jean',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
         subtitle: 'Web2',
-        icon: 'Select'
+       
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
+       
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
+      
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
+      
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
+      
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
+      
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
+      
     },
     {
         name: 'Amy Farha',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
         subtitle: 'Web3',
-        icon: 'heartbeat'
     },
 ]
 export default class StudentList extends Component {
@@ -102,6 +97,8 @@ export default class StudentList extends Component {
                                 subtitle={l.subtitle}
                                 bottomDivider
                                 rightIcon={{name:l.icon}}
+                                bottomDivider
+                                chevron
                             />
                         ))
                     }

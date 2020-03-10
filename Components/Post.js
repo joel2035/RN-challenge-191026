@@ -1,36 +1,40 @@
 import React, { Component } from 'react';
-import { Text, TextInput, StyleSheet, View, ScrollView, Picker} from 'react-native';
+import { Text,StyleSheet, View, ScrollView, ImageBackground} from 'react-native';
 import { Input } from 'react-native-elements';
 import Textarea from 'react-native-textarea';
+// import bgImage from '../images/background.png';
 export default class Post extends Component {
     render() {
         return (
-            <View style = {styles.container}>
-                <ScrollView style={styles.scroll}>
-                    <Text style={styles.textContainer}>Ajouter un Etudiant</Text>
-                    <Input
-                        placeholder='FirstName'
-                    />
-                    <Input
-                        placeholder='Name'
-                    />
-                    <Input
-                        placeholder='Email'
-                    />
-                    <Input
-                        placeholder='Promotion'
-                    />
-                    <Textarea
-                        containerStyle={styles.textareaContainer}
-                        style={styles.textarea}
-                        maxLength={120}
-                        placeholder={'Description'}
-                        placeholderTextColor={'#c7c7c7'}
-                        underlineColorAndroid={'transparent'}
-                    />
-                </ScrollView>
-
-            </View>            
+            
+                <View style = {styles.container}>
+                
+                    <ScrollView style={styles.scroll}>
+                        <Text style={styles.textContainer}>Ajouter un Etudiant</Text>
+                        <Input
+                            placeholder='FirstName'
+                        />
+                        <Input
+                            placeholder='Name'
+                        />
+                        <Input
+                            placeholder='Email'
+                        />
+                        <Input
+                            placeholder='Promotion'
+                        />
+                        <Textarea
+                            containerStyle={styles.textareaContainer}
+                            style={styles.textarea}
+                            maxLength={120}
+                            placeholder={'Description'}
+                            placeholderTextColor={'#c7c7c7'}
+                            underlineColorAndroid={'transparent'}
+                        />
+                    </ScrollView>
+ 
+                </View>  
+                 
         )
     }
 }
@@ -41,7 +45,6 @@ const styles = StyleSheet.create({
      justifyContent:'center',
      alignItems:'center',
      top:4,
-     backgroundColor:'yellow' 
  },
  scroll:{
      marginTop:70
